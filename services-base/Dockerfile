@@ -1,4 +1,5 @@
-# this is a python image ready to receive a django project
+# services-base
+# base image to python services
 
 FROM python:3.5-alpine
 ENV PYTHONUNBUFFERED 1
