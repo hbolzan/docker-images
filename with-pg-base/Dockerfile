@@ -2,7 +2,8 @@
 # base image for services that depend on postgres
 
 ARG VERSION
-FROM hbolzan/services-base:${VERSION}
+ARG USER
+FROM ${USER}/services-base:${VERSION}
 
 # setup
 RUN apk add postgresql-dev gcc python3 python3-dev musl-dev

@@ -2,7 +2,8 @@
 # python image ready to receive a django project
 
 ARG VERSION
-FROM hbolzan/with-pg-base:${VERSION}
+ARG USER
+FROM ${USER}/with-pg-base:${VERSION}
 
 # setup
 RUN pip install gunicorn
