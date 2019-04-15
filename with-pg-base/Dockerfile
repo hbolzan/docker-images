@@ -8,4 +8,3 @@ FROM ${USER}/services-base:${VERSION}
 # setup
 RUN apk add postgresql-dev
 RUN apk add postgresql-client
-RUN apk add netcat-openbsd
