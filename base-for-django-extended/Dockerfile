@@ -14,4 +14,4 @@ RUN apt-get update && apt-get -y upgrade && apt-get install -y apt-utils \
 ENV LANG pt_BR.utf8
 
 # required packages
-RUN apt-get update && apt-get install -y python3-pip build-essential libffi-dev python-cairocffi python3-dev python3-setuptools libxrender1 wkhtmltopdf netcat nginx vim --no-install-recommends
+RUN apt-get update && apt-get install -y python3-pip build-essential libffi-dev python-cairocffi python3-dev python3-setuptools libxrender1 wkhtmltopdf netcat nginx vim openjdk-11-jre --no-install-recommends
